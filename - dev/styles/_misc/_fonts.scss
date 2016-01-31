@@ -1,0 +1,23 @@
+@mixin open-sans($style : regular) {
+
+
+  @if ($style == light) {
+    font-family: 'Open Sans lite';
+  }
+
+  @if ($style == regular) {
+    font-family: 'Open Sans Regular';
+  }
+
+  @if ($style == semibold) {
+    font-family: 'Open Sans Semibold';
+  }
+
+  @if ($style == bold) {
+    font-family: 'Open Sans Bold';
+  }
+}
+
+
+
+

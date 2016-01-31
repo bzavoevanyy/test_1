@@ -1,0 +1,160 @@
+extends ../main
+
+block title
+	| Главная страница (main.psd)
+
+block content
+	article.content-wrapper
+		.container
+			include ../_common/_sidebar
+			.main-content
+				.photo-slider
+					img(src='/img/photo1.jpg').photo-slider__img
+					a(href='#').photo-slider__arrow-left
+					a(href='#').photo-slider__arrow-right
+				.main-content__title
+					h2 Семинары и курсы для юристов
+				.main-content__text
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos laborum magni nam repellendus, rerum vitae voluptatum. Animi atque, cum dolor ducimus, explicabo fugit, perspiciatis quibusdam recusandae similique voluptate voluptatibus.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos laborum magni nam repellendus,
+				.main-content__text
+					p rerum vitae voluptatum. Animi atque, cum dolor ducimus, explicabo fugit, perspiciatis quibusdam recusandae similique voluptate voluptatibus.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos laborum magni nam repellendus, rerum vitae voluptatum. Animi atque, cum dolor ducimus, explicabo fugit, perspiciatis quibusdam recusandae similique voluptate voluptatibus.
+				.filter
+					.filter-top
+						span.filter-top__text Найдено 25 курсов, семинаров, тренингов.
+						.sorter
+							span.sorter__text Сортировать по
+							select.sorter-select
+								option(value='') Дате добавления
+								option(value='') Цене
+					.filter-menu
+						.filter-menu__title Фильтр
+						.filter-menu__1 Тип мероприятия
+							ul.filter-menu__1-list
+								li.filter-menu__1-item
+									label
+										input(type='radio' name='menu1').filter-menu__1-radio
+										span Любой
+								li.filter-menu__1-item
+									label
+										input(type='radio' name='menu1').filter-menu__1-radio
+										span Вебинары, online обучение, e-learning
+								li.filter-menu__1-item
+									label
+										input(type='radio' name='menu1').filter-menu__1-radio
+										span Долгосрочные курсы
+								li.filter-menu__1-item
+									label
+										input(type='radio' name='menu1').filter-menu__1-radio
+										span Конференции, форумы, круглые столы
+								li.filter-menu__1-item
+									label
+										input(type='radio' name='menu1').filter-menu__1-radio
+										span Курсы, семинары, тренинги
+						.filter-menu__2 Время обучения
+							ul.filter-menu__1-list
+								li.filter-menu__1-item
+									label
+										input(type='radio' name='menu2').filter-menu__1-radio
+										span Любоt
+								li.filter-menu__1-item
+									label
+										input(type='radio' name='menu2').filter-menu__1-radio
+										span День
+								li.filter-menu__1-item
+									label
+										input(type='radio' name='menu2').filter-menu__1-radio
+										span Вечер
+								li.filter-menu__1-item
+									label
+										input(type='radio' name='menu2').filter-menu__1-radio
+										span Выходной
+						.filter-menu__3 Направление
+							ul.filter-menu__1-list
+								li.filter-menu__1-item
+									label
+										input(type='radio' name='menu3').filter-menu__1-radio
+										span Вариант 1
+								li.filter-menu__1-item
+									label
+										input(type='radio' name='menu3').filter-menu__1-radio
+										span Вариант 2
+								li.filter-menu__1-item
+									label
+										input(type='radio' name='menu3').filter-menu__1-radio
+										span Вариант 3
+						.filter-menu__4
+							ul.filter-menu__4-list
+								- var menu4items = ['Все','Ближайшие семинары','Январь','Февраль','Архив']
+									each item in menu4items
+										li.menu4-item
+											a(href='#').menu4-item__link= item
+				.course-block
+					.course-block__sale
+						img(src='/img/sale.png')
+						.course-block__sale-text Акция
+					.course-block__left
+						a(href='#' title="Добавить в закладки").bookmark
+						.course-block__left-title Название семинара или курса, полное название, юридическое что-там полное название, юридическое что-там
+						.stars-block
+							img(src='/img/stars.png')
+							a(href='#' title="Добавить в закладки") (Читать отзывы)
+						.course-block__left-text Слушатели семинара смогут:
+							ul.cource-block__left-list
+								li.cource-block__left-list-item 1. Что-нибудь смогут
+								li.cource-block__left-list-item 2. Еще что-нибудь смогут
+					.course-block__right
+						ul.course-block__right-list
+							li.course-block__right-item Тип пероприятия:
+								p Семинар
+							li.course-block__right-item Дата обучения:
+								p 12.01 - 15.01.2016
+							li.course-block__right-item Цена:
+								p.sale 12 345 руб
+				.course-block
+					.course-block__left
+						a(href='#' title="Добавить в закладки").bookmark.bookmark-active
+						.course-block__left-title Название семинара или курса, полное название, юридическое что-там полное название, юридическое что-там
+						.stars-block
+							img(src='/img/stars.png')
+							a(href='#') (Читать отзывы)
+						.course-block__left-text Слушатели семинара смогут:
+							ul.cource-block__left-list
+								li.cource-block__left-list-item 1. Что-нибудь смогут
+								li.cource-block__left-list-item 2. Еще что-нибудь смогут
+					.course-block__right
+						ul.course-block__right-list
+							li.course-block__right-item Тип пероприятия:
+								p Семинар
+							li.course-block__right-item Дата обучения:
+								p 12.01 - 15.01.2016
+							li.course-block__right-item Цена:
+								p 12 345 руб
+
+				.course-block
+					.course-block__left
+						a(href='#' title="Добавить в закладки").bookmark
+						.course-block__left-title Название семинара или курса, полное название, юридическое что-там полное название, юридическое что-там
+						.stars-block
+							img(src='/img/stars.png')
+							a(href='#' title="Добавить в закладки") (Читать отзывы)
+						.course-block__left-text Слушатели семинара смогут:
+							ul.cource-block__left-list
+								li.cource-block__left-list-item 1. Что-нибудь смогут
+								li.cource-block__left-list-item 2. Еще что-нибудь смогут
+					.course-block__right
+						ul.course-block__right-list
+							li.course-block__right-item Тип пероприятия:
+								p Семинар
+							li.course-block__right-item Дата обучения:
+								p 12.01 - 15.01.2016
+							li.course-block__right-item Цена:
+								p 12 345 руб
+
+
+
+
+
+
+

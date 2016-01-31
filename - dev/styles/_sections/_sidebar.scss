@@ -1,0 +1,183 @@
+.sidebar-wrapper {
+  float:left;
+  width:250px;
+}
+.catalog, .tourist {
+  display: block;
+  font-size:18px;
+  padding-left:11px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: auto;
+  box-sizing: border-box;
+  color: #2d2d2d;
+  text-decoration: none;
+  margin-bottom: 5px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.catalog {
+  background-color: $orange;
+  &:first-child {
+    text-transform: uppercase;
+  }
+}
+.tourist {
+  background-color: $blue;
+}
+.tourist-list {
+  padding:7px;
+  padding-left: 19px;
+  padding-right: 0;
+  padding-bottom: 9px;
+  box-sizing: border-box;
+}
+.tourist-list__link {
+  font-size: 18px;
+  color: #2d2d2d;
+  text-decoration: none;
+  line-height: 37px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.news {
+  padding-left: 8px;
+  margin-bottom: 10px;
+}
+.news-block {
+  max-height: 200px;
+  overflow: hidden;
+  & h5 {
+    color: $blue;
+    font-size: 16px;
+    margin: 10px 0;
+    margin-bottom: 2px;
+  }
+  & h6 {
+    font-size: 14px;
+    color: $grey;
+    margin: 2px 0;
+  }
+  & p {
+    font-size: 13px;
+    color: $black;
+  }
+}
+.news-block__link {
+  margin-top: 8px;
+  font-size: 14px;
+  color: $grey;
+  text-decoration: none;
+  display: block;
+}
+.second {
+  margin-left:149px;
+  margin-top: 0px;
+}
+.subscribe {
+  border-left: 4px solid $grey;
+  border-top:1px solid $grey;
+  border-bottom: 1px solid $grey;
+  border-right: 4px solid $grey;
+  box-sizing: border-box;
+  padding: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.subscribe__title {
+  margin: 5px;
+  color:$blue;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.subcribe__text {
+  color:$black;
+  font-size: 14px;
+}
+.subscribe-form {
+  position: relative;
+  margin-top: 10px;
+}
+.subscribe-form__input {
+  width:220px;
+  height: 36px;
+  border: 2px solid $blue;
+  padding: 5px;
+  box-sizing: border-box;
+  @include border-radius(3px);
+}
+.subscribe-form__button {
+  position: absolute;
+  top:4px;
+  left: 200px;
+  @include get-sprite($misc-sprite,arrow_blue);
+  border: none;
+}
+.certificate {
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+  & .news-block__link {
+    margin-left: 133px;
+  }
+}
+.cirtificate__img {
+  width: 141px;
+  height: 186px;
+}
+.arrow-left {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top:93px;
+  @include transform(rotate(45deg));
+  border-left: 2px solid $grey;
+  border-bottom: 2px solid $grey;
+}
+.arrow-right {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top:93px;
+  right: 0;
+  @include transform(rotate(225deg));
+  border-left: 2px solid $grey;
+  border-bottom: 2px solid $grey;
+}
+.arrow-left__link, .arrow-right__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.submenu-list__item {
+  position: relative;
+}
+.submenu-list__link {
+  display: block;
+  color: #ffffff;
+  background-color: #6b6b6b;
+  margin-bottom: 2px;
+  font-size:18px;
+  padding-left:11px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: auto;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.with-arrow {
+  &:after {
+    content: "";
+    position: absolute;
+    @include get-sprite($misc-sprite, arrow_white);
+    top:20px;
+    left:225px;
+  }
+}
+.submenu {
+  margin-bottom: 400px;
+}

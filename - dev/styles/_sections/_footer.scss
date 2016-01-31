@@ -1,0 +1,123 @@
+.footer-top {
+  color:#ffffff;
+  & a {
+    color:#ffffff;
+  }
+  margin-bottom: 55px;
+}
+.footer__block1 {
+  float:left;
+  width: 180px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  margin-left: 25px;
+}
+.footer__block2 {
+  float:left;
+  width:260px;
+  box-sizing: border-box;
+  margin-left: 103px;
+}
+.footer__block3 {
+  float:left;
+  width:140px;
+  box-sizing: border-box;
+  margin-left: 56px;
+}
+.footer__block4 {
+  float:left;
+  width:140px;
+  box-sizing: border-box;
+  margin-left: 164px;
+}
+.block1-title {
+  font-size: 18px;
+  margin:18px 0;
+  box-sizing: border-box;
+}
+.block1-text__link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.block2-title {
+  font-size: 16px;
+  margin:15px 0;
+}
+.block2-menu {
+  padding-left: 10px;
+}
+.block2-menu__link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.footer-bottom__text {
+  width: 220px;
+  color: #2c2c2c;
+  font-size: 14px;
+  margin-left: 18px;
+  float:left;
+}
+.footer-bottom__socials {
+  float: right;
+}
+.socials-list__item {
+  display: inline-block;
+}
+.socials-list__link-gp {
+   display: block;
+   width:52px;
+   height: 52px;
+   background: url("/img/icon/socials.png") 0 0 no-repeat;
+ }
+.socials-list__link-tw {
+  display: block;
+  width:52px;
+  height: 52px;
+  background: url("/img/icon/socials.png") -53px 0 no-repeat;
+}
+.socials-list__link-em {
+  display: block;
+  width:52px;
+  height: 52px;
+  background: url("/img/icon/socials.png") -106px 0 no-repeat;
+}
+.socials-list__link-fb {
+  display: block;
+  width:52px;
+  height: 52px;
+  background: url("/img/icon/socials.png") -159px 0 no-repeat;
+}
+.socials-list__link-rss {
+  display: block;
+  width:52px;
+  height: 52px;
+  background: url("/img/icon/socials.png") -212px 0 no-repeat;
+}
+.socials-list__link-vk {
+  display: block;
+  width:52px;
+  height: 52px;
+  background: url("/img/icon/socials.png") -268px 0 no-repeat;
+}
+.socials-list__link-mr {
+  display: block;
+  width:52px;
+  height: 52px;
+  background: url("/img/icon/socials.png") -321px 0 no-repeat;
+}
+.socials-list__link-y {
+  display: block;
+  width:52px;
+  height: 52px;
+  background: url("/img/icon/socials.png") -374px 0 no-repeat;
+}
+.socials-list__link-od {
+  display: block;
+  width:52px;
+  height: 52px;
+  background: url("/img/icon/socials.png") -432px 0 no-repeat;
+}

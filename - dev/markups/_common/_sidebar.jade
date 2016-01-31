@@ -1,0 +1,52 @@
+.sidebar-wrapper
+    a(href='#').catalog Весь каталог
+    a(href='#').tourist Юристам
+    ul.tourist-list
+        - var urlist = ['Банковское дело','НФО (некред.фин. орг-ции)','Кассирам']
+            each item in urlist
+                li.tourist-list__item
+                    a(href='#').tourist-list__link= item
+    a(href='#').tourist Виды услуг
+    ul.tourist-list
+        - var urlist = ['Семинары и конференции','Курсы повышения калификации ']
+        each item in urlist
+            li.tourist-list__item
+                a(href='#').tourist-list__link= item
+    a(href='#').tourist Календарь мероприятий
+    .calendar Здесь виджет "Календарь"
+    a(href='#').catalog Ближайшие семинары
+    a(href='#').tourist Новости
+    .news
+        .news-block
+            h5 Заголовок
+            h6 29.12.2015
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos laborum magni nam repellendus, rerum vitae voluptatum. Animi atque, cum dolor ducimus, explicabo fugit, perspiciatis quibusdam recusandae similique voluptate voluptatibus.
+        a(href='#').news-block__link Читать далее...
+        a(href='#').news-block__link.second Все новости >
+    .subscribe
+        h5.subscribe__title Подписка
+        p.subcribe__text Хотите получать информацию о лучших семинарах? Подпишитесь на нашу еженедельную рассылку.
+        form.subscribe-form
+            input(type='text' name='email' placeholder='E-Mail').subscribe-form__input
+            button(type='submit').subscribe-form__button
+    a(href='#').catalog НЕ СМОГЛИ НАЙТИ НУЖНЫЙ СЕМИНАР?
+    a(href='#').tourist Награды и сертификаты
+    .certificate
+        a(href='#')
+            img(src='/img/certificate.png' alt='certificate').cirtificate__img
+        .arrow-left
+            a(href='#').arrow-left__link
+        .arrow-right
+            a(href='#').arrow-right__link
+        a(href='#').news-block__link Посмотреть все >
+    .submenu
+        ul.submenu-list
+            - var submenu = ['Документы','Публикации ','Партнеры и спонсоры ','Карта сайта','Контакты']
+                each item in submenu
+                    li.submenu-list__item
+                        a(href='#').submenu-list__link.with-arrow=item
+
+
+
+
+

@@ -1,0 +1,6 @@
+.container
+    ul.bread-crumbs
+        - var crumbs = ['Главная', 'Семинары для юристов'];
+            each item in crumbs
+                li.bread-crumbs__item
+                    a(href='#').bread-crumbs__link= item

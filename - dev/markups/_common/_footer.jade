@@ -1,0 +1,43 @@
+footer.footer
+    .footer-top
+        .container
+            .footer__block1
+                .logo
+                    a(href='index.html').logo__link
+                        img(src='img/logo.png' alt='logo').logo__img
+                h5.block1-title Контакты
+                ul.block1-text
+                    - var block1contacts = ['8 (499) 646-25-36','julia@fkinform.ru']
+                    each item in block1contacts
+                        li.block1-text__item
+                            a(href='#').block1-text__link= item
+            .footer__block2
+                    h5.block2-title ООО Финансовый консалтинг
+                    ul.block2-menu
+                        - var block2menu = ['О нас','Вопрос - ответ','Студентам из других городов', 'Контакты', 'Карта сайта']
+                        each item in block2menu
+                            li.block2-menu__item
+                                a(href='#').block2-menu__link= item
+            .footer__block3
+                h5.block2-title Направления
+                ul.block2-menu
+                    - var block3menu = ['Юристам']
+                    each item in block3menu
+                        li.block2-menu__item
+                            a(href='#').block2-menu__link= item
+            .footer__block4
+                h5.block2-title Библиотека
+                ul.block2-menu
+                    - var block3menu = ['Видеообзоры','Публикации','Новости','Акции','Архив']
+                    each item in block3menu
+                        li.block2-menu__item
+                            a(href='#').block2-menu__link= item
+    .footer-bottom
+        .container
+            .footer-bottom__text © 2015 Финансовый консалтинг Все права защищены
+            .footer-bottom__socials
+                ul.socials-list
+                    - var socialsitems = ['gp','tw','em','fb','rss','vk','mr','y','od']
+                        each item in socialsitems
+                            li.socials-list__item
+                                a(href='#' class='socials-list__link-'+item)

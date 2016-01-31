@@ -1,0 +1,27 @@
+header.header
+    .header-top
+        .container
+            nav.header-top__left
+                    ul.main-menu
+                        - var mainmenu = ['Главная','Вопрос - ответ','Направления деятельности','Приглашаем к сотрудничеству','Контакты']
+                            each item in mainmenu
+                                li.mainmenu__item
+                                    a(href='#').main-menu__link= item
+            .header-top__right
+                form.search
+                    input(type='text' name='search').search__input
+                    button(type='submit').search__input-submit
+                a(href='#').login Вход/Регистрация
+    .header-bottom
+        .container
+            .logo-img
+                a(href='index.html').logo-img__link
+                    img(src='img/logo.png' alt='logo').logo-img__img
+            .logo-text
+                h1.logo-text__title Знания - Ваш путь к успеху!
+                h2.logo-text__subtitle ООО Финансовый консалтинг
+            .logo-phone
+                h3.logo-phone__number +7 (495) 646-25-36
+                p.logo-phone__time с 9 до 21:00
+                a(href='#').logo-phone__link → Заказать звонок
+
